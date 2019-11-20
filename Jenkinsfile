@@ -23,6 +23,7 @@ pipeline {
 								   
 								   echo 'username is $USERNAME'
 									  bat 'cf login -a http://api.run.pivotal.io -u g.n.s.harsha@gmail.com -p Pivotal123$'
+									  bat 'cf push'
 								
 								   }
 	}
