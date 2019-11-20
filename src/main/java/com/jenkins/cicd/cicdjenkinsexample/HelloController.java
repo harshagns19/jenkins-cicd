@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @GetMapping
-    public Static hello(){
+    public String hello(){
         return "My first CICD from Jenkins";
     }
 }
