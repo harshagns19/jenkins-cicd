@@ -15,7 +15,7 @@ pipeline {
 			steps{
 				
 				echo 'stage 2'
-				bat 'mvn clean package'
+				bat 'mvn build'
 				withCredentials([[$class				:'UsernamePasswordMultiBinding',
 								   credentialsId		:'PCF_LOGIN',
 								   usernameVariable		:'USERNAME',
