@@ -14,8 +14,8 @@ pipeline {
 		stage('Deploy'){
 			steps{
 				
-				echo 'stage 2'
-				bat 'mvn build'
+				echo 'stage 2 Deploy'
+				bat 'mvn install'
 				withCredentials([[$class				:'UsernamePasswordMultiBinding',
 								   credentialsId		:'PCF_LOGIN',
 								   usernameVariable		:'USERNAME',
